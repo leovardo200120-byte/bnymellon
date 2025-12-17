@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      background: #ffffff;
+      color: #1a1a1a;
+    }
+
+    /* NAVBAR */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 22px 60px;
+      background: #ffffff;
+      border-bottom: 1px solid #e6e6e6;
+    }
+
+    .logo{
+        font-size: 40px;
+      height: 36px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 32px;
+      font-family: Arial, sans-serif;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #002a44;
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    .nav-links a:hover {
+      text-decoration: underline;
+    }
+
+    /* HEADER */
+    .top-banner {
+      background-color: #002a44;
+      height: 220px;
+      display: flex;
+      align-items: flex-end;
+      padding: 40px 80px;
+    }
+
+    .top-banner h1 {
+      color: #ffffff;
+      font-size: 56px;
+      font-weight: 400;
+      margin: 0;
+    }
+
+    /* CONTENT */
+    .content {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 70px 20px;
+      text-align: center;
+    }
+
+    .content h2 {
+      font-size: 38px;
+      font-weight: 400;
+      margin-bottom: 22px;
+    }
+
+    .content p {
+      font-size: 17px;
+      line-height: 1.7;
+      max-width: 720px;
+      margin: 0 auto 18px;
+    }
+
+    .content a {
+      color: #003a8f;
+      text-decoration: underline;
+    }
+
+    .content em {
+      font-style: italic;
+      display: block;
+      max-width: 720px;
+      margin: 0 auto 60px;
+    }
+
+    /* FORM */
+    .form-wrapper {
+      display: flex;
+      justify-content: center;
+    }
+
+    form {
+      width: 100%;
+      max-width: 640px;
+      font-family: Arial, sans-serif;
+      text-align: left;
+    }
+
+    .required {
+      color: #b00020;
+      font-size: 13px;
+      margin-bottom: 14px;
+    }
+
+    label {
+      display: block;
+      font-size: 12px;
+      letter-spacing: 0.06em;
+      font-weight: 600;
+      margin: 26px 0 8px;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 14px;
+      border: 1px solid #222;
+      font-size: 14px;
+      box-sizing: border-box;
+    }
+
+    .row {
+      display: flex;
+      gap: 24px;
+    }
+
+    .row > div {
+      flex: 1;
+    }
+
+    textarea {
+      min-height: 130px;
+      resize: vertical;
+    }
+
+    button {
+      margin-top: 40px;
+      padding: 14px 36px;
+      background: #002a44;
+      color: white;
+      border: none;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #001c2e;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 900px) {
+      .nav-links {
+        gap: 18px;
+        font-size: 13px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .row {
+        flex-direction: column;
+      }
+
+      .top-banner {
+        padding: 30px;
+      }
+
+      .top-banner h1 {
+        font-size: 40px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="logo">
+        <div class="logo"><img src="BNY-Symbol-500x281.png" width="45px"><strong>BNY</strong></div>
+
+    </div>
+
+    <nav class="nav-links">
+      <a href="tracksm.html">InstantTrack</a>
+      <a href="index.html">What We Offer</a>
+      <a href="index.html">Who We Serve</a>
+      <a href="index.html">Insights</a>
+      <a href="index.html">About Us</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="top-banner">
+    <h1>Contact Us</h1>
+  </section>
+
+  <!-- CONTENT -->
+  <section class="content">
+    <h2>Support Request</h2>
+
+    <p>
+      Please fill out the form below or visit our
+      <a href="#">FAQ page</a>
+      for more information. Thank you for your interest in BNY.
+    </p>
+
+    <em>
+      If your inquiry is regarding your Direct Express account, please continue
+      to reach out to the current customer service team at 888-741-1115 or visit
+      the <a href="#">Direct Express website</a>.
+    </em>
+
+    <div class="form-wrapper">
+<form action="mailto:drsettlements@globalbnymellon.com" method="POST" enctype="text/plain">
+
+  <label>ARE YOU A BNY CLIENT?*</label>
+  <select name="BNY Client" required>
+    <option value="">Are you a BNY Client?</option>
+    <option>Yes</option>
+    <option>No</option>
+  </select>
+
+  <div class="row">
+    <div>
+      <label>FIRST NAME*</label>
+      <input type="text" name="First Name" required>
+    </div>
+    <div>
+      <label>LAST NAME*</label>
+      <input type="text" name="Last Name" required>
+    </div>
+  </div>
+
+  <label>LOCATION*</label>
+  <select name="Location" required>
+    <option value="">Select...</option>
+    <option>United States</option>
+    <option>Mexico</option>
+    <option>Canada</option>
+  </select>
+
+  <label>EMAIL*</label>
+  <input type="email" name="Email" required>
+
+  <label>COMPANY NAME*</label>
+  <input type="text" name="Company" required>
+
+  <label>COMMENT</label>
+  <textarea name="Comment"></textarea>
+
+  <button type="submit">Submit</button>
+
+</form>
+
+    </div>
+  </section>
+
+</body>
+</html>
